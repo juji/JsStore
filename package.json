@@ -1,14 +1,15 @@
 {
   "name": "@juji/jsstore",
-  "version": "4.8.2",
+  "version": "4.8.4",
   "description": "Harness the power of JsStore to streamline database operations in your web applications. With its SQL-like API, JsStore simplifies IndexedDB interactions, enabling developers to easily query, filter, and manipulate data with familiar syntax and efficiency.",
   "main": "dist/npm.export.js",
   "types": "dist/ts/main/index.d.ts",
   "sideEffects": false,
   "scripts": {
+    "webpack:dev": "cross-env NODE_ENV=development webpack --config webpack/webpack.dev.config.js",
     "webpack:prod": "cross-env NODE_ENV=production webpack --config webpack/webpack.prod.config.js",
     "move:deploy_file": "node deployer.js",
-    "build:juji": "npm run webpack:prod && npm run move:deploy_file"
+    "build:juji": "npm run webpack:dev && npm run webpack:prod && npm run move:deploy_file",
   },
   "repository": {
     "type": "git",

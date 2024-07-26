@@ -82,5 +82,8 @@
   "collective": {
     "type": "opencollective",
     "url": "https://opencollective.com/JsStore"
-  }
+  },
+  "files": [
+    "./dist"
+  ]
 }

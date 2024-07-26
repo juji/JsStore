@@ -9,7 +9,7 @@
     "webpack:dev": "cross-env NODE_ENV=development webpack --config webpack/webpack.dev.config.js",
     "webpack:prod": "cross-env NODE_ENV=production webpack --config webpack/webpack.prod.config.js",
     "move:deploy_file": "node deployer.js",
-    "build:juji": "npm run webpack:dev && npm run webpack:prod && npm run move:deploy_file",
+    "build:juji": "npm run webpack:dev && npm run webpack:prod && npm run move:deploy_file"
   },
   "repository": {
     "type": "git",

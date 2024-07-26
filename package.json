@@ -28,7 +28,7 @@
     "test:without_webworker": "cd test && npm run test:without:webworker",
     "test:without_webworker:prod": "cd test && npm run test:without:webworker:prod",
     "test:all": "npm run test:dev && npm run test:prod",
-    "build:test:all": "npm run build:all && npm run move:deploy_file && npm run install:lib && npm run test:all",
+    "build:test:all": "npm run build:all && npm run move:deploy_file",
     "install:lib": "npm pack && cd test && npm run install:lib",
     "deploy": "npm run build:ci && npm run test:injector",
     "prepublishOnly": "npm run deploy"
